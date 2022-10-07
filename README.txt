@@ -1,2 +1,1 @@
-Nog wat meer tekst.
-bla bla bla
+Dit is een test document.
