@@ -1,0 +1,26 @@
+body{
+    font-family: Verdana;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+}
+h1{
+    font-variant:all-petite-caps;
+    background-color: red;
+}
+a:hover{
+    border-color: black;
+    border-style: solid;
+}
+.stippeltjesrand{
+    border-color: black;
+    border-style: dot-dash;
+    border-width: 1px;
+}
+.checklist {
+    list-style-image:url("images/unchecked.png");
+}
+
+.checked {
+    list-style-image:url("images/checked.png");
+}

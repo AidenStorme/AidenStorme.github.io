@@ -1,0 +1,26 @@
+.hoofding1{
+    font-size: 1.8em;
+    font-family: Arial;
+}
+.hoofding2{
+    font-size: 1.5em;
+    font-family: Arial;
+}
+.hoofding3{
+    font-size: 1.4em;
+    font-family: Arial;
+}
+p{
+    font-family: "Times New Roman";
+}
+.tekst1{
+    color: red;
+}
+.tekst2{
+    color: green;
+    font-size: 2em;
+}
+.tekst3{
+    color: blue;
+    font-size: 2ex;
+}
