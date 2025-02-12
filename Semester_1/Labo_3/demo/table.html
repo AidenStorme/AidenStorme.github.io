@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Table</title>
+</head>
+<body>
+
+<table border="1px">
+    <caption>Voorbeeld van tabel</caption> <!-- Titel van tabel -->
+    <thead> <!-- Header van tabel -->
+    <tr> <!-- Rij van een tabel -->
+        <th>Kolom 1</th> <!-- Bij hoofding is het th en niet td -->
+        <th>Kolom 2</th>
+        <th>Kolom 3</th>
+    </tr>
+    </thead>
+    <tbody> <!-- Body van tabel -->
+    <tr>
+        <td colspan="3">1</td> <!-- Deze kolom spant over drie cellen -->
+    </tr>
+    <tr>
+        <td rowspan="2">4</td> <!-- Deze cel spant over twee rijen -->
+        <td>5</td>
+        <td rowspan="2">6</td>
+    </tr>
+    <tr>
+        <td>8</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

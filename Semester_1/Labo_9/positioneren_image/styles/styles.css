@@ -1,0 +1,29 @@
+article:nth-of-type(odd) img{
+    float: right;
+    padding-left: 10px
+}
+article:nth-of-type(even) img{
+    float: left;
+    padding-right: 10px
+}
+article {
+    margin: 10px;
+    border: 1px solid black;
+}
+main > * {
+    padding: 10px;
+}
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+p {
+    font-size: 1.25em;
+}
+h2{
+    margin: 0px;
+}
+main{
+    font-family: Arial, serif;
+}
