@@ -2,11 +2,17 @@ const setup = () => {
 
     let btnAdd = document.getElementById("btnAdd");
 
-    btnAdd.addEventListener("click", add)
+    btnAdd.addEventListener("click", imgAdder)
 
 }
 
-const add = () => {
+const imgAdder = () => {
+
+    txtInput = document.getElementById("txtInput").value;
+
+    const div = document.getElementById("divImages");
+
+    div.innerHTML += "<img src='" + txtInput + "' alt='image'>";
 
 }
 
