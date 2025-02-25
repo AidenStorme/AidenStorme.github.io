@@ -1,14 +1,21 @@
 const setup = () => {
 
-    document.getElementById("btnButton1").addEventListener("click", changeColor1);
+    document.getElementById("btnButton2").addEventListener("click", changeColor1);
 
 }
 
 const changeColor1 = () => {
 
-    const button1 = document.getElementById("btnButton1");
+    const button2 = document.getElementById("btnButton2");
+    let i = 0;
 
-    button1.style.backgroundColor = "white buttonface";
+    if(i === 0){
+        button2.style.backgroundColor = "Black";
+        i = 1;
+    } else{
+        button2.style.backgroundColor = "Blue";
+        i = 0;
+    }
 
 }
 
