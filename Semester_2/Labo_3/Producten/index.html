@@ -7,7 +7,41 @@
 </head>
 <body>
 
-
+<table class="table">
+    <thead>
+        <th>Producten</th>
+        <th>Prijs</th>
+        <th>Aantal</th>
+        <th>BTW</th>
+        <th>Subtotaal</th>
+    </thead>
+    <tr>
+        <td>Product1</td>
+        <td class="prijs">10.00 Eur</td>
+        <td><input type="number" value="0" class="aantal"/></td>
+        <td class="btw">6%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td>Product2</td>
+        <td class="prijs">15.00 Eur</td>
+        <td><input type="number" value="0" class="aantal"/></td>
+        <td class="btw">21%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td>Product3</td>
+        <td class="prijs">12.20 Eur</td>
+        <td><input type="number" value="0" class="aantal"/></td>
+        <td class="btw">21%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td colspan="4">Totaal</td>
+        <td id="totaal">0.00 Eur</td>
+    </tr>
+</table>
+<button id="btnHerberekenen">Herbereken</button>
 
 <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
 </body>
