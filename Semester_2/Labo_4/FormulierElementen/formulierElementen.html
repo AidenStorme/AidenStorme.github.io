@@ -3,16 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Formulier Elementen</title>
 </head>
 <body>
 
-<label for="firstName">First name*:</label>
-<input type="text" name="firstName" id="firstName" autofocus/>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
 
-<label for="lastName">Last name*:</label>
-<input type="text" name="lastName" id="lastName" autofocus/>
+        <label for="txtFirstName">First name*:</label>
+        <input type="text" id="txtFirstName" name="FirstName" placeholder="Your first name" autofocus required/>
 
-<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+        <br><label for="txtLastName">Last Name*:</label>
+        <input type="text" id="txtFirstName" name="FirstN</div>ame" placeholder="Your last name" required/>
+    </fieldset>
+    <fieldset>
+        <legend>Sport</legend>
+        <p>Which sport do you train?</p>
+
+        <input type="checkbox" id="chkRunning" name="Running" value="Running"/>
+        <label for="chkRunning">Running</label><br>
+
+        <input type="checkbox" id="chkSwimming" name="Swimming" value="Swimming"/>
+        <label for="chkSwimming">Swimming</label><br>
+
+        <input type="checkbox" id="chkRowing" name="Rowing" value="Rowing"/>
+        <label for="chkRowing">Rowing</label>
+    </fieldset>
+    <fieldset>
+        <legend>Gender</legend>
+
+        <input type="radio" id="radMale" name="Gender" value="Male"/>
+        <label for="radMale">Male</label><br>
+
+        <input type="radio" id="radFemale" name="Gender" value="Female"/>
+        <label for="radFemale">Female</label><br>
+
+        <input type="radio" id="radOther" name="Gender" value="Other"/>
+        <label for="radOther">Other / Prefer not to say</label>
+    </fieldset>
+    <fieldset>
+        <legend>Favorites</legend>
+
+        <label for="txtFavMovie">Favorite movie:</label>
+        <input type="text" id="txtFavMovie" name="Favorite Movie" placeholder="Write your favorite movie"/><br>
+
+        <label for="txtFavQuote">Favorite quote:</label>
+        <input type="text" id="txtFavQuote" name="Favorite quote" placeholder="Write your favorite quote"/><br>
+        
+        <label for="slctFavFood">Favorite food:</label>
+        <select id="slctFavFood" name="Favorite food">
+            <option value="Hamburger">Hamburger</option>
+            <option value="Hot Dog">Hot Dog</option>
+            <option value="Pizza">Pizza</option>
+        </select><br>
+        <label for="txtFlavor">Choose a flavor</label>
+        <input type="text" id="txtFlavor" name="Flavor"/>
+    </fieldset>
+    <fieldset>
+        <legend>Security & Contact</legend>
+
+        <label for="txtPassword">Password*:</label>
+        <input type="password" id="txtPassword" name="Password" required/><br>
+
+        <label for="txtEmail">Email address*:</label>
+        <input type="email" id="txtEmail" name="Email" required placeholder="Enter your email address"/><br>
+
+        <label for="txtFavSite">Favorite site:</label>
+        <input type="url" id="txtFavSite" name="Favorite site" placeholder="Enter the url of your favorite site"/>
+    </fieldset>
+    <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="nmbFavNumber">Favorite number (1-10):</label>
+        <input type="number" id="rngFavNumber" name="Favorite number" min="1" max="10"/><br>
+
+        <label for="rngFavNumber">Favorite number (11-1000):</label>
+        <input type="range" id="rngFavNumber" name="Favorite number" min="11" max="1000"/><br>
+
+        <label for="dtBorn">When were you born?</label>
+        <input type="date" id="dtBorn" name="Born"/><br>
+
+        <label for="pstPostcode">Belgium zip-code reg number*:</label>
+        <input type="text" id="pstPostcode" name="Postcode" pattern="[1-9]{1}[0-9]{3}" placeholder="8970"/>
+    </fieldset>
+    <fieldset>
+        <legend>Miscellaneous</legend>
+
+        <label for="txtSomething">Search for something:</label>
+        <input type="search" id="txtSomething" name="Search"/><br>
+
+        <label for="txtColor">What is your favorite color?</label>
+        <input type="color" id="txtColor" name="Favorite color"/><br>
+
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="File"/>
+    </fieldset>
+    <input type="submit" value="Submit"/>
+</form>
+    
 </body>
 </html>
