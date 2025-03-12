@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "c:\\Users\\aiden\\OneDrive - Hogeschool VIVES\\School\\Web development\\GithubRepo\\AidenStorme.github.io\\Semester_2\\Labo_4\\Man_Van_An\\index.html"
+        }
+    ]
+}
