@@ -18,17 +18,18 @@ const setup = () => {
 
 const start = () => {
 
-    clearInterval(global.timeouteId);
+    clearInterval(global.timeoutId);
     document.getElementsByClassName("imgBomb")[0].addEventListener("click", updateScore);
-    global.timeouteId = setInterval(move, 1000);
+    global.timeoutId = setInterval(move, 1000);
     global.score = 0;
     score.innerText = global.score;
 
 }
 const end = () => {
 
-    clearInterval(global.timeouteId);
+    clearInterval(global.timeoutId);
     window.alert(`GAME OVER\nFinal Score = ${global.score}`);
+
 }
 const updateScore = () => {
     // Check of het een bom is of niet
@@ -44,7 +45,6 @@ const updateScore = () => {
 }
 const move = () => {
 
-    let score = document.getElementById("score");
     let image = document.getElementsByClassName("imgBomb")[0];
     let playfield=document.getElementById("playField");
     let maxLeft=playfield.clientWidth - image.offsetWidth;
