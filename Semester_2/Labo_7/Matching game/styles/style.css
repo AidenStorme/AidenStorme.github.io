@@ -1,0 +1,11 @@
+img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+#cardContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    );
+}
