@@ -4,6 +4,9 @@ let global = {
     INSTAGRAM_PREFIX: "https://www.instagram.com/explore/tags/",
     TWITTER_PREFIX: "https://x.com/hashtag/",
 }
+let history = [];
+
+
 
 const setup = () => {
 
@@ -60,7 +63,7 @@ const cardBuilder = (website, search, url) => {
     let cardButton = document.createElement("a");
     cardButton.href = url;
     cardButton.className = "btn btn-primary";
-    cardButton.text = "Go";
+    cardButton.text = "Go!";
 
     let cardBody = document.createElement("div");
     cardBody.className = "card-body";
@@ -76,5 +79,18 @@ const cardBuilder = (website, search, url) => {
     card.appendChild(cardBody);
 
     container.appendChild(card);
+
+    // Save to local storage
+    const searchHistory = {
+        title: website,
+        text: search,
+        url: url
+    }
+    history.push(searchHistory);
+    const stringifiedObj = JSON.stringify(history)
+    localStorage.setItem(
+        "History",
+        stringifiedObj
+    )
 }
 window.addEventListener("load", setup);
